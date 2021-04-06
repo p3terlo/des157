@@ -31,7 +31,9 @@ li {
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 5%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #container {
@@ -46,10 +48,12 @@ header {
 
 #banner {
     margin: auto;
-    width: 80%;
-    height: 100px;
+    /* width: 80%;
+    height: 100px; */
+    height: 250px;
+    width: 1100px;
     border: 5px solid blanchedalmond;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     background-color: #7EE0D0;
     position: relative;
     overflow: hidden;
@@ -151,16 +155,16 @@ header {
     100% {
         opacity: 1;
         background-color: #EB7E1E;
-        transform: translateX(410px);
+        transform: translateX(500px);
     }
 }
 
 .ball {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     position: absolute;
-    bottom: 20%;
+    bottom: 35%;
 }
 
 #ball1 {
@@ -170,12 +174,12 @@ header {
 
 #ball2 {
     background-color: #EB7E1E;
-    left: calc(50% - 25px);
+    left: calc(50% - 40px);
 }
 
 #ball3 {
     background-color: #F0D710;
-    left: calc(100% - 150px);
+    left: calc(100% - 180px);
 }
 
 #ball4 {
@@ -189,7 +193,7 @@ header {
 main {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 main > section {
@@ -199,7 +203,6 @@ main > section {
     margin: 20px;
     padding: 20px;
     text-align: center;
-
     transition: width 1s ease-in-out;
 }
 
