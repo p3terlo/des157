@@ -48,8 +48,6 @@ header {
 
 #banner {
     margin: auto;
-    /* width: 80%;
-    height: 100px; */
     height: 250px;
     width: 1100px;
     border: 5px solid blanchedalmond;
@@ -57,15 +55,12 @@ header {
     background-color: #7EE0D0;
     position: relative;
     overflow: hidden;
-    animation: bgcolorchange 15s infinite alternate;
+    animation: bgcolorchange 8s infinite alternate;
 }
 
 @keyframes bgcolorchange {
-    0% {background-color: #7EE0D0;}
-    25% {background-color: #E7E9F2;}
-    50% {background-color: #A8EEAD;}
-    75% {background-color: #D4D5F2;}
-    100% {background-color: #D4EE7D;}
+    0% {background-color: whitesmoke;}
+    100% {background-color: black;}
 }
 
 #banner:hover #ball1{
@@ -76,16 +71,16 @@ header {
     animation: slide2 3s infinite ease forwards;
 }
 
+#banner:hover #ball2a{
+    animation: slide2a 3s infinite ease forwards;
+}
+
 #banner:hover #ball3{
     animation: slide3 3s infinite ease forwards;
 }
 
-#banner:hover #ball4{
-    animation: slide4 3s infinite ease forwards;
-}
-
-#banner:hover #ball5{
-    animation: slide5 3s infinite ease forwards;
+#banner:hover #ball3a{
+    animation: slide3a 3s infinite ease forwards;
 }
 
 @keyframes slide1 {
@@ -95,67 +90,60 @@ header {
     }
     50% {
         background-color: #EB7E1E;
-        left: calc(50% - 25px);
+        left: calc(50% - 40px);
     }
     100% {
         background-color: #F0D710;
-        left: calc(100% - 150px)
+        left: calc(100% - 180px)
     }
 }
 
 @keyframes slide2 {
     0% {
         background-color: #EB7E1E;
-        left: calc(50% - 25px);
+        left: calc(50% - 40px);
     }
     50% {
         background-color: #F0D710;
-        transform: translateX(370px);
+        left: calc(100% - 180px);
     }
     100% {
-        background-color: #F0D710;
-        transform: translateX(600px);
+        left: calc(100% + 180px);
+    }
+}
+
+@keyframes slide2a {
+    50% {
+        left: -80px;
+    }
+    100% {
+        background-color: #A30600;
+        left: 100px;
     }
 }
 
 @keyframes slide3 {
     0% {
         background-color: #F0D710;
-        left: calc(100% - 150px);
+        left: calc(100% - 180px);
+    }
+    50% {
+        background-color: #A30600;
+        left: calc(100% + 180px);
     }
     100% {
-        background-color: #A30600;
-        transform: translateX(300px);
+        left: calc(100% + 180px);
     }
 }
 
-@keyframes slide4 {
-    0% {
-        opacity: 0;
-    }
+@keyframes slide3a {
     50% {
-        opacity: 0;
+        background-color: #A30600;
+        left: 100px;
     }
     100% {
-        opacity: 1;
-        background-color: #A30600;
-        transform: translateX(100px);
-    }
-}
-
-@keyframes slide5 {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-        background-color: #A30600;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
         background-color: #EB7E1E;
-        transform: translateX(500px);
+        left: calc(50% - 40px);
     }
 }
 
@@ -177,17 +165,17 @@ header {
     left: calc(50% - 40px);
 }
 
+#ball2a {
+    left: -80px;
+}
+
 #ball3 {
     background-color: #F0D710;
     left: calc(100% - 180px);
 }
 
-#ball4 {
-    left: 0px;
-}
-
-#ball5 {
-    left: 0px;
+#ball3a {
+    left: -80px;
 }
 
 main {
@@ -198,7 +186,6 @@ main {
 
 main > section {
     width: 33%;
-    border: solid 3px black;
     border-radius: 2%;
     margin: 20px;
     padding: 20px;
@@ -211,7 +198,7 @@ main > section:hover {
 }
 
 #studios {
-    background-color: #DFBAFF;
+    background-color: #ED967E;
 }
 
 #studios:hover {
@@ -219,7 +206,7 @@ main > section:hover {
 }
 
 #rd {
-    background-color: #9E9EE8;
+    background-color: #F7CBA1;
 }
 
 #rd:hover {
@@ -227,7 +214,7 @@ main > section:hover {
 }
 
 #final {
-    background-color: #ADD7FF;
+    background-color: #FAF596;
 }
 
 #final:hover {
