@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Experiment 2</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 40vh;
+        }
+        p {
+            margin: auto;
+            width: 30%;
+            /* border: 5px solid salmon; */
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
     <h1>Horoscope Generator</h1>
@@ -26,7 +39,7 @@
                 for (let unit of dob) {
                     unit = parseInt(unit);
 
-                    if (isNaN(unit)) {
+                    if (isNaN(unit) || unit === undefined || dob.length != 3) {
 
                         alert('Invalid date format');
                         
