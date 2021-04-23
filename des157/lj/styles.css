@@ -91,10 +91,9 @@ span {
     color: salmon;
 }
 
-/* article {
-    width: 100%;
-    min-width: 1366px;
-} */
+article {
+    margin-bottom: 30px;
+}
 
 /* See https://paulund.co.uk/css-animation-link-underline */
 h3 > a {
