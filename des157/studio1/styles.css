@@ -1,0 +1,62 @@
+/* https://fontmeme.com/super-mario-font/ */
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('./SuperMario256.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+h1 {
+    font-family: 'SuperMario256';
+    font-size: 50px;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+#container {
+    width: 100%;
+    max-width: 1366px;
+    min-width: 900px;
+}
+
+.space {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blue {
+    -webkit-text-stroke: 3px black;
+    color: #53A1EC;
+}
+
+.green {
+    -webkit-text-stroke: 3px black;
+    color: #62AD46;
+}
+
+.red {
+    -webkit-text-stroke: 3px black;
+    color: #FA2507;
+}
+
+.yellow {
+    -webkit-text-stroke: 3px black;
+    color: #FEDD02;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
