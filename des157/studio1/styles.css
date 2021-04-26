@@ -15,6 +15,10 @@ h1, h2, h3, h4, p, ul, ol, li {
     font-size: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'SuperMario256';
     font-size: 50px;
@@ -122,4 +126,52 @@ input[type=submit]:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-} 
+}
+
+#display {
+    position: relative;
+}
+
+#mario {
+    position: absolute;
+    left: 25vw;
+    bottom: 65vh;
+}
+
+#mario > img {
+    max-width: 15%;
+    height: auto;
+}
+
+.block {
+    position: absolute;
+    left: 35vw;
+}
+
+.block > img {
+    max-width: 20%;
+    height: auto;
+}
+
+#block1 {
+    bottom: 62vh;
+}
+
+#block2 {
+    bottom: 42vh;
+}
+
+#block3 {
+    bottom: 22vh;
+}
+
+#block4 {
+    bottom: 2vh;
+}
+
+footer > nav > ul {
+    margin: auto;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}

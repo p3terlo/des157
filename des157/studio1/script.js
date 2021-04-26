@@ -39,4 +39,36 @@
         let text = `Your words are: ${words}`;
         display.innerHTML = text;
     }
+
+    let blocks = document.getElementsByClassName('block');
+    let mario = document.getElementById('mario');
+
+    for (let block of blocks) {
+        block.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            let block_num = block.id;
+            switch(block_num) {
+                case 'block1':
+                    mario.style.transform = 'translateY(0vh)';
+                    mario.style.transition = 'all 1s';
+                    break;
+                case 'block2':
+                    mario.style.transform = 'translateY(20vh)';
+                    mario.style.transition = 'all 1s';
+                    break;
+                case 'block3':
+                    mario.style.transform = 'translateY(40vh)';
+                    mario.style.transition = 'all 1s';
+                    break;
+                case 'block4':
+                    mario.style.transform = 'translateY(60vh)';
+                    mario.style.transition = 'all 1s';
+                    break;
+                default:
+                    break;
+            }
+        });
+    }
+
 }());
