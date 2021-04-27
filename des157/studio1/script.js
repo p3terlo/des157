@@ -96,19 +96,19 @@
     function transformMario(mario, block) {
         switch(block) {
             case 'block1':
-                    mario.style.transform = 'translateY(0vh)';
+                    mario.style.transform = 'translateY(0px)';
                     mario.style.transition = 'all 1s';
                     break;
                 case 'block2':
-                    mario.style.transform = 'translateY(20vh)';
+                    mario.style.transform = 'translateY(150px)';
                     mario.style.transition = 'all 1s';
                     break;
                 case 'block3':
-                    mario.style.transform = 'translateY(40vh)';
+                    mario.style.transform = 'translateY(300px)';
                     mario.style.transition = 'all 1s';
                     break;
                 case 'block4':
-                    mario.style.transform = 'translateY(60vh)';
+                    mario.style.transform = 'translateY(450px)';
                     mario.style.transition = 'all 1s';
                     break;
                 default:

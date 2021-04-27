@@ -136,8 +136,8 @@ input[type=submit]:active {
 
 #mario {
     position: absolute;
-    left: 25vw;
-    bottom: 61vh;
+    left: 350px;
+    bottom: 475px;
 }
 
 #mario > img {
@@ -147,7 +147,7 @@ input[type=submit]:active {
 
 .block {
     position: absolute;
-    left: 35vw;
+    left: 480px;
 }
 
 .block:hover {
@@ -166,24 +166,24 @@ input[type=submit]:active {
 }
 
 #block1 {
-    bottom: 60vh;
+    bottom: 460px;
 }
 
 #block2 {
-    bottom: 40vh;
+    bottom: 310px;
 }
 
 #block3 {
-    bottom: 20vh;
+    bottom: 160px;
 }
 
 #block4 {
-    bottom: 0vh;
+    bottom: 10px;
 }
 
 .triangle {
     position: absolute;
-    left: 46.5vw;
+    left: 640px;
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
@@ -193,49 +193,49 @@ input[type=submit]:active {
 }
 
 #triangle1 {
-    bottom: 67vh;
+    bottom: 515px;
 }
 
 #triangle2 {
-    bottom: 47vh;
+    bottom: 365px;
 }
 
 #triangle3 {
-    bottom: 27vh;
+    bottom: 215px;
 }
 
 #triangle4 {
-    bottom: 7vh;
+    bottom: 65px;
 }
 
 .text {
     position: absolute;
-    left: 50vw;
+    left: 680px;
     transition: all 0.5s;
     background-color: azure;
     padding: 30px;
 }
 
 #text1 {
-    bottom: 65vh;
+    bottom: 500px;
 }
 
 #text2 {
-    bottom: 45vh;
+    bottom: 350px;
 }
 
 #text3 {
-    bottom: 25vh;
+    bottom: 200px;
 }
 
 #text4 {
-    bottom: 5vh;
+    bottom: 50px;
 }
 
 #clouds {
     position: absolute;
-    bottom: 55vh;
-    left: 60vw;
+    bottom: 400px;
+    left: 800px;
     z-index: -1;
 }
 
@@ -247,7 +247,7 @@ input[type=submit]:active {
 #grass {
     position: absolute;
     z-index: -2;
-    bottom: -20vh;
+    bottom: -170px;
     left: 0;
 }
 
@@ -259,8 +259,8 @@ input[type=submit]:active {
 #platform {
     z-index: -1;
     position: absolute;
-    bottom: -23vh;
-    left: -10vw;
+    bottom: -175px;
+    left: -135px;
 }
 
 #platform > img {
