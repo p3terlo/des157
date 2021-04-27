@@ -169,6 +169,38 @@ input[type=submit]:active {
     bottom: 2vh;
 }
 
+.text {
+    position: absolute;
+    left: 50vw;
+    transition: all 0.5s;
+}
+
+#text1 {
+    bottom: 68vh;
+}
+
+#text2 {
+    bottom: 48vh;
+}
+
+#text3 {
+    bottom: 28vh;
+}
+
+#text4 {
+    bottom: 8vh;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
 footer > nav > ul {
     margin: auto;
     width: 20%;
