@@ -60,13 +60,13 @@
                     textDiv.innerHTML = `<p> Mario, on his way to save Princess Peach from the terrible Bowser, stumbled upon a ${dict['noun1']}. Upon closer glance, Mario couldn’t help but notice that the ${dict['noun1']} was both ${dict['adj1']} and ${dict['adj2']}. </p>`;
                     break;
                 case 'text2':
-                    textDiv.innerHTML = `<p> “Wahoo! This ${dict['noun1']} is just what I needed to beat Bowser.” said Mario emphatically. And with that, Mario began to ${dict['verb1']} towards Bowser’s dungeon. </p>`;
+                    textDiv.innerHTML = `<p> “Wahoo! This ${dict['noun1']} is just what I needed to beat Bowser.” said Mario emphatically. And with that, Mario began to ${dict['verb1']} towards Bowser’s castle. </p>`;
                     break;
                 case 'text3':
-                    textDiv.innerHTML = `<p> At the foot of the dungeon stood a great ${dict['noun2']}. With great caution, Mario ${dict['verb2']} the ${dict['noun2']}, but behold, it was a trap! Bowser sprang out from behind the dungeon doors and wrapped up the subdued Mario with chains. </p>`;
+                    textDiv.innerHTML = `<p> At the foot of the castle stood a great ${dict['noun2']}. With great caution, Mario ${dict['verb2']} the ${dict['noun2']}, but behold, it was a trap! Bowser sprang out from behind the castle doors, but alas, Mario was ready! </p>`;
                     break;
                 case 'text4':
-                    textDiv.innerHTML = `<p> With both Mario and Princess Peach locked up, it was all now up to Luigi to save the day. Stay tuned for part 2! </p>`;
+                    textDiv.innerHTML = `<p> In the blink of an eye, Mario pulled out the ${dict['noun1']} and ${dict['verb1']} Bowser in his ${dict['adj1']} foot, knocking him unconscious. Behind ${dict['noun2']} lay Princess Peach, ${dict['adj2']} but unharmed. Mario ${dict['verb2']} Princess Peach, scooping her into his arms and saving the day. </p>`;
                 default:
                     break;
             }

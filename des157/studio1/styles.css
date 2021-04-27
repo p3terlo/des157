@@ -77,7 +77,6 @@ form {
     margin-top: 20px;
     border: 2px solid black;
     border-radius: 4px;
-    /* background-color: antiquewhite; */
     background-color: azure;
     transition: 1s;
 }
@@ -138,7 +137,7 @@ input[type=submit]:active {
 #mario {
     position: absolute;
     left: 25vw;
-    bottom: 63vh;
+    bottom: 61vh;
 }
 
 #mario > img {
@@ -167,24 +166,24 @@ input[type=submit]:active {
 }
 
 #block1 {
-    bottom: 62vh;
+    bottom: 60vh;
 }
 
 #block2 {
-    bottom: 42vh;
+    bottom: 40vh;
 }
 
 #block3 {
-    bottom: 22vh;
+    bottom: 20vh;
 }
 
 #block4 {
-    bottom: 2vh;
+    bottom: 0vh;
 }
 
 .triangle {
     position: absolute;
-    left: 47vw;
+    left: 46.5vw;
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
@@ -194,19 +193,19 @@ input[type=submit]:active {
 }
 
 #triangle1 {
-    bottom: 69vh;
+    bottom: 67vh;
 }
 
 #triangle2 {
-    bottom: 49vh;
+    bottom: 47vh;
 }
 
 #triangle3 {
-    bottom: 29vh;
+    bottom: 27vh;
 }
 
 #triangle4 {
-    bottom: 9vh;
+    bottom: 7vh;
 }
 
 .text {
@@ -218,25 +217,26 @@ input[type=submit]:active {
 }
 
 #text1 {
-    bottom: 67vh;
+    bottom: 65vh;
 }
 
 #text2 {
-    bottom: 47vh;
+    bottom: 45vh;
 }
 
 #text3 {
-    bottom: 27vh;
+    bottom: 25vh;
 }
 
 #text4 {
-    bottom: 7vh;
+    bottom: 5vh;
 }
 
 #clouds {
     position: absolute;
-    bottom: 59vh;
+    bottom: 55vh;
     left: 60vw;
+    z-index: -1;
 }
 
 #clouds > img {
