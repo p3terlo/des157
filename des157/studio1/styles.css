@@ -17,6 +17,7 @@ h1, h2, h3, h4, p, ul, ol, li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1 {
@@ -31,6 +32,8 @@ ol, ul {
 body {
     margin: 2% 5%;
     font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    background-color: #ADD8FB;
 }
 
 #container {
@@ -72,14 +75,14 @@ form {
     align-items: center;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #CCC;
+    border: 2px solid black;
     border-radius: 4px;
+    /* background-color: antiquewhite; */
+    background-color: azure;
     transition: 1s;
 }
 
 form:hover {
-    border: 2px solid #666;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
@@ -97,7 +100,7 @@ input[type=text] {
     padding: 8px 12px;
     margin: 8px;
     border-radius: 4px;
-    border: 3px solid #ccc;
+    border: 2px solid black;
     transition: 1s;
     outline: none;
 }
@@ -135,7 +138,7 @@ input[type=submit]:active {
 #mario {
     position: absolute;
     left: 25vw;
-    bottom: 65vh;
+    bottom: 63vh;
 }
 
 #mario > img {
@@ -148,9 +151,19 @@ input[type=submit]:active {
     left: 35vw;
 }
 
+.block:hover {
+    cursor: pointer;
+}
+
 .block > img {
     max-width: 20%;
     height: auto;
+    transition: 0.5s;
+}
+
+.block > img:hover {
+    filter: drop-shadow(10px 20px 4px); 
+    max-width: 22%;
 }
 
 #block1 {
@@ -169,26 +182,90 @@ input[type=submit]:active {
     bottom: 2vh;
 }
 
+.triangle {
+    position: absolute;
+    left: 47vw;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid azure;
+    border-bottom: 25px solid transparent;
+    transition: all 0.5s;
+}
+
+#triangle1 {
+    bottom: 69vh;
+}
+
+#triangle2 {
+    bottom: 49vh;
+}
+
+#triangle3 {
+    bottom: 29vh;
+}
+
+#triangle4 {
+    bottom: 9vh;
+}
+
 .text {
     position: absolute;
     left: 50vw;
     transition: all 0.5s;
+    background-color: azure;
+    padding: 30px;
 }
 
 #text1 {
-    bottom: 68vh;
+    bottom: 67vh;
 }
 
 #text2 {
-    bottom: 48vh;
+    bottom: 47vh;
 }
 
 #text3 {
-    bottom: 28vh;
+    bottom: 27vh;
 }
 
 #text4 {
-    bottom: 8vh;
+    bottom: 7vh;
+}
+
+#clouds {
+    position: absolute;
+    bottom: 59vh;
+    left: 60vw;
+}
+
+#clouds > img {
+    max-width: 100%;
+    height: auto;
+}
+
+#grass {
+    position: absolute;
+    z-index: -2;
+    bottom: -20vh;
+    left: 0;
+}
+
+#grass > img {
+    max-width: 100%;
+    height: auto;
+}
+
+#platform {
+    z-index: -1;
+    position: absolute;
+    bottom: -23vh;
+    left: -10vw;
+}
+
+#platform > img {
+    max-width: 110%;
+    height: auto;
 }
 
 .hidden {
@@ -202,8 +279,8 @@ input[type=submit]:active {
 }
 
 footer > nav > ul {
-    margin: auto;
+    margin-left: 85%;
     width: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }

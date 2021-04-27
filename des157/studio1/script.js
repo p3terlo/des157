@@ -79,10 +79,16 @@
 
     function showText(text, textArr) {
         for (let box of textArr) {
+            let num = box.id[box.id.length - 1];
+            let triangle = 'triangle' + num;
+
             if (box.id == text.id) {
                 document.getElementById(text.id).className = 'text showing';
+                document.getElementById(triangle).className = 'triangle showing';
+
             } else {
                 document.getElementById(box.id).className = 'text hidden';
+                document.getElementById(triangle).className = 'triangle hidden';
             }
         }
     }
