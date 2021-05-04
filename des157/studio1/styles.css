@@ -274,7 +274,7 @@ input[type=submit]:active {
 }
 
 .showing {
-    visibility: showing;
+    visibility: visible;
     opacity: 1;
 }
 
