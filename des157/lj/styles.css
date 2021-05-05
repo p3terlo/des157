@@ -78,9 +78,6 @@ header {
 }
 
 #headline {
-    /* position: absolute;
-    left: 120px;
-    bottom: 80px; */
     opacity: 0;
     font-size: 100px;
     margin-top: -190px;
@@ -121,6 +118,15 @@ article > p {
     column-count: 3;
     padding: 20px;
     line-height: 1.5em;
+}
+
+figure {
+    margin-left: 25%;
+}
+
+article > figure > img {
+    width: 70%;
+    height: auto;
 }
 
 @media only screen and (max-width: 1000px) {
