@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+#container {
+    max-width: 1366px;
+    min-width: 900px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#container > h1 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+#slideshow {
+    width: 70%;
+    margin: auto;
+}
+
+#slideshow > img {
+    max-height: 500px;
+    width: auto;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: lavender;
+    padding: 20px;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article > h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+article > p {
+    text-align: left;
+    padding: 2em;
+}
+
+.corner {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: tomato;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+#buttons {
+    display: flex;
+    margin-top: 1em;
+}
+
+.scroll {
+    width: 100%;
+    padding: 20px 16px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    font-size: 2em;
+}
+
+.scroll:hover {
+    transition: all 0.5s;
+    background-color: #3e8e41;
+}
+
+header > nav > ul {
+    margin-top: 1em;
+    margin-left: 40%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
