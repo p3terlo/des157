@@ -19,7 +19,6 @@ ol, ul {
 }
 
 #container {
-    max-width: 1366px;
     min-width: 900px;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
