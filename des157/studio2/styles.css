@@ -38,6 +38,12 @@ ol, ul {
 #slideshow > img {
     max-height: 500px;
     width: auto;
+    transition: box-shadow 1s;
+}
+
+#slideshow > img:hover {
+    cursor: pointer;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .hidden {
