@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+
+        <div id="intro">
+            <img class="pig" id="pig1" src="images/pig1.png" alt="front pig">
+            <h1>Game of PIG</h1>
+            <p>&bull;There are two players. The player whose turn it is rolls the dice.</p>
+            <p>&bull;The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn.</p>
+            <p>&bull;After each roll, the current player can either roll again, (assuming a "one" was not rolled) or pass to the other player. The first player to get 30 points or higher wins.</p> 
+            <p>&bull;If you roll two "ones" (snake eyes), your current score gets zeroed out.</p>
+        </div>
+
+        <div class="bottom" id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <div class="bottom" id="game"></div>
+        <div class="bottom" id="actions"></div>
+
+
+        <div class="bottom" id="score1"></div>
+        <div class="bottom" id="score2"></div>
+        <img class="pig" id="pig2" src="images/pig2.png" alt="left pig">
+        <img class="pig" id="pig3" src="images/pig3.png" alt="right pig">
+
+        <footer>
+            <ul>
+                <li><a href="https://validator.w3.org/check?uri=https://p3terlo.github.io/des157/studio3">HTML</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https://p3terlo.github.io/des157/studio3">Valid CSS</a></li>
+                <li><a href="sources.html">Audio Sources</a></li>
+            </ul>
+        </footer>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+body {
+    font-family: 'KoHo', sans-serif;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+button {
+    background-color: indianred;
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: crimson;
+}
+
+
+div {
+    padding: 10px;
+}
+
+#container {
+    min-width: 900px;
+}
+
+#intro {
+    color: white;
+    background-color: #EB9DC9;
+    border: 5px solid pink;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.pig {
+    max-width: 15%;
+    height: auto;
+    position: absolute;
+}
+
+#pig1 {
+    top: -60%;
+    left: 42.5%;
+}
+
+#pig2 {
+    top: 50%;
+    left: 5%;
+    z-index: -1;
+}
+
+#pig3 {
+    top: 50%;
+    left: 80%;
+}
+
+
+.bottom {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#gamecontrol {
+    background-color: #EB9DC9;
+    border-top: 5px solid pink;
+    border-left: 5px solid pink;
+    border-right: 5px solid pink;
+}
+
+#game {
+    background-color: #EB9DC9;
+    border-left: 5px solid pink;
+    border-right: 5px solid pink;
+}
+#actions {
+    background-color: #EB9DC9;
+    border-bottom: 5px solid pink;
+    border-left: 5px solid pink;
+    border-right: 5px solid pink;
+}
+
+#score1 {
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    width: 20%;
+}
+
+#score2 {
+    position: absolute;
+    top: 70%;
+    left: 79%;
+    width: 20%;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li {
+    margin: 2em;
+}
