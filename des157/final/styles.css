@@ -20,6 +20,15 @@ h2 {
     margin: 2em;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
 body {
     font-family: 'Newsreader', serif;
 }
@@ -35,4 +44,10 @@ body > p {
     line-height: 2em;
     padding-left: 5em;
     padding-right: 5em;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
 }
