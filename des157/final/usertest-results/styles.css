@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+body > h2 {
+    margin-left: 2em;
+}
+
+p {
+    column-count: 2;
+    line-height: 2em;
+    margin: 3em;
+}
