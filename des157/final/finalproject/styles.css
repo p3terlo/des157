@@ -231,10 +231,17 @@ input[type=submit]:active {
     left: -400%;
 }
 
-#clouds {
+#clouds1 {
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: -1;
+}
+
+#clouds2 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
     z-index: -1;
 }
 
@@ -251,144 +258,6 @@ input[type=submit]:active {
     left: 0;
     z-index: -1;
 }
-
-/* #display {
-    position: relative;
-}
-
-#mario {
-    position: absolute;
-    left: 350px;
-    bottom: 475px;
-}
-
-#mario > img {
-    max-width: 15%;
-    height: auto;
-}
-
-.block {
-    position: absolute;
-    left: 480px;
-}
-
-.block:hover {
-    cursor: pointer;
-}
-
-.block > img {
-    max-width: 20%;
-    height: auto;
-    transition: 0.5s;
-}
-
-.block > img:hover {
-    filter: drop-shadow(10px 20px 4px); 
-    max-width: 22%;
-}
-
-#block1 {
-    bottom: 460px;
-}
-
-#block2 {
-    bottom: 310px;
-}
-
-#block3 {
-    bottom: 160px;
-}
-
-#block4 {
-    bottom: 10px;
-}
-
-.triangle {
-    position: absolute;
-    left: 640px;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-right: 50px solid azure;
-    border-bottom: 25px solid transparent;
-    transition: all 0.5s;
-}
-
-#triangle1 {
-    bottom: 515px;
-}
-
-#triangle2 {
-    bottom: 365px;
-}
-
-#triangle3 {
-    bottom: 215px;
-}
-
-#triangle4 {
-    bottom: 65px;
-}
-
-.text {
-    position: absolute;
-    left: 680px;
-    transition: all 0.5s;
-    background-color: azure;
-    padding: 30px;
-}
-
-#text1 {
-    bottom: 500px;
-}
-
-#text2 {
-    bottom: 350px;
-}
-
-#text3 {
-    bottom: 200px;
-}
-
-#text4 {
-    bottom: 50px;
-}
-
-#clouds {
-    position: absolute;
-    bottom: 400px;
-    left: 800px;
-    z-index: -1;
-}
-
-#clouds > img {
-    max-width: 100%;
-    height: auto;
-}
-
-#grass {
-    position: absolute;
-    z-index: -2;
-    bottom: -170px;
-    left: 0;
-}
-
-#grass > img {
-    max-width: 100%;
-    height: auto;
-}
-
-#platform {
-    z-index: -1;
-    position: absolute;
-    bottom: -175px;
-    left: -135px;
-}
-
-#platform > img {
-    max-width: 110%;
-    height: auto;
-} */
 
 .hidden {
     visibility: hidden;
