@@ -8,6 +8,10 @@
     const blocks = document.getElementsByClassName('block');
     const text = document.getElementsByClassName('text');
 
+    const wahooSound = new Audio('media/wahoo.mp3');
+    const miniJumpSound = new Audio('media/minijump.wav');
+    miniJumpSound.volume = 0.5;
+
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         let formData = document.querySelectorAll('input[type=text]');
@@ -39,6 +43,8 @@
         if (emptyFields > 0) {
             makeErrText();
         } else {
+            wahooSound.play();
+
             populateDict(dict, words);
             makeMadLib(dict);
 
@@ -123,6 +129,7 @@
     for (let block of blocks) {
         block.addEventListener('click', function(e) {
             e.preventDefault();
+            miniJumpSound.play();
 
             let block_num = block.id;
             switch(block_num) {

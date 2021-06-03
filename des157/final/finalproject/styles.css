@@ -273,7 +273,7 @@ footer {
     grid-area: footer;
     justify-self: end;
     align-self: end;
-    width: 15%;
+    width: 20%;
 }
 
 footer > nav > ul {
